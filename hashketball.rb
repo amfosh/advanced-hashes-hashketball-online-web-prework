@@ -153,7 +153,7 @@ end
 
 def player_numbers(name)
   number_array = []
-  game_hash.collect do |location, team_data|
+  game_hash.each do |location, team_data|
     team_data[:players][:number]
     number_array
   end
