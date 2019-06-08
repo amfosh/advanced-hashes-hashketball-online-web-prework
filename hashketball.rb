@@ -152,11 +152,7 @@ def team_names
 end
 
 def player_numbers(name)
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player_name, data|
-      if player_name == name
-        return data[:number]
-      end
-    end
+  game_hash.collect do |location, team_data|
+    team_data[:players][:number]
   end
 end
