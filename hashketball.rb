@@ -187,11 +187,3 @@ def big_shoe_rebounds
 end
 rebound
 end
-
-def most_points_scored
-  game_hash.values.map do |team_data|
-    team_data[:players]
-  end.values.map do |stats|
-    stats[:points]
-  end.max
-end
