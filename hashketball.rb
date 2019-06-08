@@ -150,3 +150,13 @@ def team_names
     team_data[:team_name]
   end
 end
+
+def player_numbers(name)
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |player_name, data|
+      if player_name == name
+        return data[:number]
+      end
+    end
+  end
+end
