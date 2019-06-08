@@ -175,3 +175,4 @@ end
 end
 
 def big_shoe_rebounds
+  shoe_size == 0
