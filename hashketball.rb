@@ -118,11 +118,7 @@ def game_hash
 end
 
 def num_points_scored(name)
-  def num_points_scored(n)
-  game_hash.each do |home_away, keys|
-    keys[:players].each do |player|
-      return player[:points] if player[:player_name] == n
-    end
+ 
   end
 end
 
