@@ -193,4 +193,5 @@ def most_points_scored
     team_data[:players]
   end.values.map do |stats|
     stats[:points]
-    
+  end.max
+end
