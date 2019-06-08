@@ -191,4 +191,5 @@ end
 def most_points_scored
   game_hash.values.map do |team_data|
     team_data[:players]
-  end.values.map do |
+  end.values.map do |stats|
+    
