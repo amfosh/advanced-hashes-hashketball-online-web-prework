@@ -189,9 +189,4 @@ rebound
 end
 
 def most_points_scored
-  points = 0
-  game_hash.collect do |location, team_data|
-    team_data[:players].collect do |player_name, data|
-      if data[:points] > points
-        
-    if data[:points]
+  game_hash[:]
