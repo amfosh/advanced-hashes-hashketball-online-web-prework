@@ -189,4 +189,4 @@ rebound
 end
 
 def most_points_scored
-  game_hash[:]
+  game_hash.values.map do 
