@@ -154,6 +154,7 @@ end
 def player_numbers(name)
   number_array = []
   game_hash.each do |location, team_data|
+    if team_data[:team_name]
     team_data[:players][:number]
     number_array
   end
